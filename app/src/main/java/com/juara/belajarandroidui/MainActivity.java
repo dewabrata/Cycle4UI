@@ -2,6 +2,7 @@ package com.juara.belajarandroidui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -68,7 +69,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void tekanSignUp(View v){
-        Toast.makeText(MainActivity.this,"Ini dari method sighup", Toast.LENGTH_SHORT).show();
+       Intent intent =new Intent(MainActivity.this,FormSignUp.class);
+       startActivity(intent);
     }
 
     int x =0 ;
